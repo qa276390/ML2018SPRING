@@ -155,9 +155,9 @@ for i in range(iter):
 
 #sdirpath = sys.argv[3]
 # save model
-np.save( 'new_model.npy',w)
+np.save( 'model.npy',w)
 # read model
-w = np.load('new_model.npy')
+w = np.load('model.npy')
 
 
 # In[15]:
