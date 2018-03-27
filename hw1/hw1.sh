@@ -1,1 +1,1 @@
-python3 test.py test.csv output.csv
+python3 test.py $1 $2
