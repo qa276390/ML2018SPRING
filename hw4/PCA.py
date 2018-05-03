@@ -25,12 +25,13 @@ image_flat = np.reshape(x, (415,-1))
 mean_face = np.mean(image_flat, axis=0)
 
 #save mean face
+"""
 m_f = mean_face
 m_f -= np.min(m_f)
 m_f /= np.max(m_f)
 m_f = (m_f * 255).astype(np.uint8)
 skimage.io.imsave("mean_face.jpg", m_f.reshape(600,600,3))
-
+"""
 X = image_flat - mean_face
 
 #SVD
